@@ -1,0 +1,31 @@
+{
+  "name": "@cmiot/babel-preset-node",
+  "version": "1.0.0",
+  "description": "Babel preset for node",
+  "author": "snadn <snadn@snadn.cn>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmiot-fe/babel-preset-node"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "modify-babel-preset": "^3.2.1"
+  },
+  "scripts": {
+	"test": "jest",
+	"test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "babel-core": "^6.26.3",
+    "eslint-config-iot": "^0.1.11",
+    "jest": "^22.4.3"
+  },
+  "peerDependencies": {
+    "babel-core": "^6.26.3"
+  }
+}
