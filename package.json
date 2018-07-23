@@ -1,6 +1,6 @@
 {
   "name": "@cmiot/babel-preset-node",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Babel preset for node",
   "author": "snadn <snadn@snadn.cn>",
   "license": "MIT",

@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = () => ({
 	presets: [
 		['@babel/preset-env', {
 			targets: {
@@ -10,4 +10,4 @@ module.exports = {
 		}],
 		// './custom.js',
 	],
-};
+});
