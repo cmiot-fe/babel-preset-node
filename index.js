@@ -1,16 +1,13 @@
 module.exports = {
 	presets: [
-		['babel-preset-env', {
+		['@babel/preset-env', {
 			targets: {
 				node: 8,
 			},
 			loose: true,
 			modules: 'commonjs',
-			useBuiltIns: 'runtime',
+			useBuiltIns: 'usage',
 		}],
-		'./custom.js',
-	],
-	plugins: [
-		'transform-runtime',
+		// './custom.js',
 	],
 };
