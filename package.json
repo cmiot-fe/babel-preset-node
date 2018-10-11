@@ -1,6 +1,6 @@
 {
   "name": "@cmiot/babel-preset-node",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Babel preset for node",
   "author": "snadn <snadn@snadn.cn>",
   "license": "MIT",
@@ -10,8 +10,8 @@
   },
   "main": "index.js",
   "dependencies": {
-    "@babel/preset-env": "^7.0.0-beta.54",
-    "@babel/preset-stage-2": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-stage-2": "^7.0.0",
     "modify-babel-preset": "^3.2.1"
   },
   "scripts": {
@@ -19,10 +19,13 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.54",
-    "@types/jest": "^22.2.3",
-    "eslint-config-iot": "^0.1.11",
-    "jest": "^22.4.3"
+    "@babel/core": "^7.1.2",
+    "@types/jest": "^23.3.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "eslint-config-cmiot": "^0.3.1",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0-beta.54"
