@@ -1,6 +1,6 @@
 {
   "name": "@cmiot/babel-preset-node",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Babel preset for node",
   "author": "snadn <snadn@snadn.cn>",
   "license": "MIT",
@@ -9,23 +9,32 @@
     "url": "https://github.com/cmiot-fe/babel-preset-node"
   },
   "main": "index.js",
-  "dependencies": {
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-stage-2": "^7.0.0",
-    "modify-babel-preset": "^3.2.1"
-  },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch"
   },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-typescript": "^7.3.3",
+    "core-js": "^3.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "@types/jest": "^23.3.5",
+    "@types/jest": "^24.0.18",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "eslint-config-cmiot": "^0.3.1",
-    "jest": "^23.6.0",
-    "regenerator-runtime": "^0.12.1"
+    "babel-jest": "^24.9.0",
+    "eslint-config-cmiot": "^0.6.0",
+    "jest": "^24.9.0"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0-beta.54"

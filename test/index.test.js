@@ -7,6 +7,6 @@ function readFile(path) {
 }
 
 test('async', () => {
-  const transform = babel.transform(readFile('src/async.js'), opt());
+  const transform = babel.transformFileSync(`${__dirname}/src/async.js`, opt());
   expect(transform.code).toBe(readFile('dist/async.js'));
 });
