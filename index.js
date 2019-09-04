@@ -1,4 +1,7 @@
-module.exports = () => ({
+module.exports = ({
+  useBuiltIns = 'entry',
+  transformRuntime = false,
+} = {}) => ({
   presets: [
     [
       '@babel/preset-env',
@@ -8,7 +11,7 @@ module.exports = () => ({
         },
         modules: 'commonjs',
         loose: true,
-        useBuiltIns: 'usage',
+        useBuiltIns,
         shippedProposals: true,
         corejs: { version: 3, proposals: true },
         // "corejs": 3
@@ -18,12 +21,12 @@ module.exports = () => ({
     '@babel/typescript',
   ],
   plugins: [
-    [
-     "@babel/plugin-transform-runtime",
-     {
-       "corejs": { version: 3, proposals: true },
-       "useESModules": false,
-     }
+    transformRuntime && [
+      '@babel/plugin-transform-runtime',
+      {
+        corejs: { version: 3, proposals: true },
+        useESModules: false,
+      },
     ],
     // Stage 2
     ['@babel/plugin-proposal-decorators', { legacy: true }],
@@ -37,5 +40,5 @@ module.exports = () => ({
     '@babel/plugin-syntax-import-meta',
     ['@babel/plugin-proposal-class-properties', { loose: false }],
     '@babel/plugin-proposal-json-strings',
-  ],
+  ].filter((plugin) => !!plugin),
 });
