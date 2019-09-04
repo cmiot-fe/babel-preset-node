@@ -1,6 +1,9 @@
 # babel-preset-node
 
-a babel-preset for cmiot-fe when use node:8
+a babel-preset for cmiot-fe when use node
+
+- 3.0.0 => node:10
+- 2.0.0 => node:8
 
 ## CHANGELOG
 
